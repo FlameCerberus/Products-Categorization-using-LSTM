@@ -27,12 +27,15 @@ The LSTM model was trained using the following parameters:
 - **Metrics**: Accuracy
 
 The architecture of the LSTM model includes multiple LSTM layers followed by dense layers with softmax activation for multiclass classification.
+
 ![model_architecture](https://github.com/FlameCerberus/Products-Categorization-using-LSTM/assets/96816249/eea7c949-6df3-4a4f-87ea-52c38da01ec9)
 
 - **Training Loss and Validation Loss**: The loss calculated during the training and validation phases, respectively.
+  
   ![Epoch_Loss_Tensorboard](https://github.com/FlameCerberus/Products-Categorization-using-LSTM/assets/96816249/76ed3f31-abbb-439b-9394-6025364644c7)
 
 - **Training Accuracy and Validation Accuracy**: The accuracy of the model on the training and validation data, respectively.
+  
   ![Epoch_Accuracy_Tensorboard](https://github.com/FlameCerberus/Products-Categorization-using-LSTM/assets/96816249/aba62e62-abb7-4942-a935-965ad9355c4c)
 
 The training shows that there are no overfitting or underfitting occuring in the tensorboard training images as the validation and training accuracy do not curve down.
@@ -42,11 +45,13 @@ The training shows that there are no overfitting or underfitting occuring in the
 The model was evaluated using the following metrics:
 
 - **F1 Score and Accuracy**: A combination of the F1 score, which provides a balance between precision and recall, and the accuracy score, which measures the proportion of correct predictions among the total number of predictions.
+
 ![F1,Accuracy-Scores](https://github.com/FlameCerberus/Products-Categorization-using-LSTM/assets/96816249/b0fcf19b-21cf-4232-bf41-9808a18aa5bb)
 
 The F1 and Accuracy score shows a great promise on the model's ability to predict the product's category based on its description given to the model as F1 score is very high.
 
 - **Confusion Matrix**: A table showing the counts of true positive, true negative, false positive, and false negative predictions.
+
 ![Confusion_Matrix](https://github.com/FlameCerberus/Products-Categorization-using-LSTM/assets/96816249/77477ee9-62a0-47f7-b8eb-07333c8b97ae)
 
 Most of the predicted values are shown in the confusion matrix have been accurate as a lot of the prediction are true positives. This strengthen the information from the F1 and Accuracy score
@@ -54,6 +59,7 @@ Most of the predicted values are shown in the confusion matrix have been accurat
 ## Live Test Results
 
 We conducted live testing on a sample of unseen data to assess the model's performance in real-world scenarios by deploying the model using streamlit showing it can predict product's categories by giving it the description
+
 ![image](https://github.com/FlameCerberus/Products-Categorization-using-LSTM/assets/96816249/faa98658-088a-4d2f-b60d-4ae57c136148)
 
 The input given was:
